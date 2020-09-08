@@ -12,8 +12,8 @@ export const form = {
   medicsProblems: ''
 }
 
-//const API_ENDPOINT = 'https://api.fridaysforfuturegrenoble.fr'
-const API_ENDPOINT = 'http://localhost:4500'
+const API_ENDPOINT = 'https://api.fridaysforfuturegrenoble.fr'
+//const API_ENDPOINT = 'http://localhost:4500'
 
 const v = (s) => {
   return s !== ''
