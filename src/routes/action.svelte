@@ -137,15 +137,14 @@ ul {
       <li>L'action aura lieu le vendredi 25 septembre après-midi</li><br>
       <li>Ce n'est pas un jeu, il s'agit d'une action <strong>illégale</strong>, qui, par conséquent comporte certains risques. Nous faisons cela parce que c'est NÉCESSAIRE et non pas pour nous amuser ou simplement sécher les cours</li><br>
       <li>La veille de l'action, nous t'enverrons un SMS pour te communiquer le lieu et l'heure de RDV pour un BRIEFING</li><br>
-      <li>Il y aura donc un briefing où tout te sera expliqué (heure de l'action, attitude à adopter, ect)</li><br>
-      <li>Lors du briefing - le jour même - on t'expliqueras tout les aboutissants de l'action à savoir : comment réagir en cas de présence policière, la notion de non-violence</li><br>
-      <li>L'action, bien qu'illégale sera non-violente (sauf cas de légitime défense, tout sera détaillé lors du briefing) conformément à nos <a href="https://youthforclimate.fr/qui-sommes-nous/charte-de-grenoble/">valeurs et principes</a></li>
+      <li>Il y aura donc un briefing où on t'expliqueras tout les aboutissants de l'action à savoir : comment réagir en cas de présence policière, la notion de non-violence</li><br>
+      <li>L'action, bien qu'illégale sera non-violente conformément à nos <a href="https://youthforclimate.fr/qui-sommes-nous/charte-de-grenoble/">valeurs et principes</a> (sauf cas de légitime défense, tout sera détaillé lors du briefing)</li>
     </ul>
 
     <hr>
 
     <div class="input">
-      <label for="username">Ton prénom et initiale de ton nom de famille (ou pseudo si tu souhaites assurer ta défense juridique seul)*</label><br>
+      <label for="username">Ton prénom et initial de ton nom de famille (ou pseudo si tu souhaites assurer ta défense juridique seul-e)*</label><br>
       <input type="text" name="username" bind:value={form.username}>
     </div>
     <br>
@@ -157,7 +156,7 @@ ul {
     <br>
 
     <div class="input">
-      <label for="alreadyBePart">As tu déjà participé à une action de désobéissance civile ?*</label><br>
+      <label for="alreadyBePart">As-tu déjà participé à une action de désobéissance civile ?*</label><br>
       <ul>
         <li>
           <input type="radio" name="alreadyBePartSelector" bind:group={form.alreadyBePart} value={'oui'} />
@@ -172,7 +171,7 @@ ul {
     <br>
 
     <div class="input">
-      <label for="emergencyPhone">Numéro de téléphone d'un proche en cas d'urgence*</label><br>
+      <label for="emergencyPhone">Numéro de téléphone d'un-e proche en cas d'urgence*</label><br>
       <input type="text" name="emergencyPhone" bind:value={form.emergencyPhone}>
     </div>
     <br>
@@ -181,16 +180,12 @@ ul {
       <label for="formed">Quel âge auras-tu le 25 septembre ?</label><br>
       <ul>
         <li>
-          <input type="radio" name="ageSelector" bind:group={form.age} value={'-16'} />
-          <label for="ageSelector">- de 16 ans</label>
-        </li>
-        <li>
-          <input type="radio" name="ageSelector" bind:group={form.age} value={'16-18'} />
-          <label for="ageSelector">16 à 18 ans</label>
+          <input type="radio" name="ageSelector" bind:group={form.age} value={'-18'} />
+          <label for="ageSelector">- de 18 ans</label>
         </li>
         <li>
           <input type="radio" name="ageSelector" bind:group={form.age} value={'+18'} />
-          <label for="ageSelector">+ de 18 ans</label>
+          <label for="ageSelector">18 ans ou +</label>
         </li>
       </ul>
     </div>
@@ -212,7 +207,7 @@ ul {
     <br>
 
     <div class="input">
-      <label for="risk">Quel niveau de risque juridique es-tu prêt-es à prendre lors de l'action ?* <span class="opt">(⚠️ Un seul choix possible)</span></label><br>
+      <label for="risk">Quel niveau de risque juridique es-tu prêt-e à prendre lors de l'action ?* <span class="opt">(⚠️ Un seul choix possible)</span></label><br>
       <ul>
         <li>
           <input type="radio" name="riskSelector" bind:group={form.risk} value={'Faible'} />
@@ -235,15 +230,15 @@ ul {
       <ul>
         <li>
           <input type="checkbox" name="roleMedic" bind:group={form.roles} value={'Medic'} />
-          <label for="roleMedic">Street Medic <span class="opt">une personne formée au millieu médical pour aider en cas de problèmes sur le lieux de l'action</span></label>
+          <label for="roleMedic">Street Medic <span class="opt">une personne formée au millieu médical pour aider en cas de problèmes sur le lieu de l'action</span></label>
         </li>
         <li>
           <input type="checkbox" name="roleMedia" bind:group={form.roles} value={'Mediactivist'} />
-          <label for="roleMedic">Mediactiviste <span class="opt">s'occupe de prendre des photos et des vidéos pour y remonter a l'équipe de communication</span></label>
+          <label for="roleMedic">Mediactiviste <span class="opt">s'occupe de prendre des photos et des vidéos pour les remonter a l'équipe de communication</span></label>
         </li>
         <li>
           <input type="checkbox" name="rolePK" bind:group={form.roles} value={'Peace Keeper'} />
-          <label for="roleMedic">Peace keeper <span class="opt">le but du peace keeper est d'expliquer et rassurer les passant.es, employé.e.s, etc</span></label>
+          <label for="roleMedic">Peace keeper <span class="opt">le but du peace keeper est d'expliquer et rassurer les passant-es, employé-es, etc</span></label>
         </li>
         <li>
           <input type="checkbox" name="roleSimple" bind:group={form.roles} value={'Simple participant-e'} />
