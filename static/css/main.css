@@ -1,0 +1,73 @@
+@import url('https://indestructibletype.com/fonts/Jost.css');
+@import url('/css/ionicons.min.css');
+
+::selection {
+  background: #1DA64A;
+}
+
+body {
+  margin: 0;
+  font-family: Jost;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+a {
+  color: white;
+  transition-duration: .2s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.fullpage {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+.green {
+  color: #1DA64A;
+}
+
+.center {
+  text-align: center;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  color: #1DA64A;
+  font-weight: bold;
+}
+.separator::before, .separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+.separator::before {
+  margin-right: .50em;
+}
+.separator::after {
+  margin-left: .50em;
+}
