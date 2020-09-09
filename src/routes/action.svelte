@@ -180,8 +180,12 @@ ul {
       <label for="formed">Quel âge auras-tu le 25 septembre ?</label><br>
       <ul>
         <li>
+          <input type="radio" name="ageSelector" bind:group={form.age} value={'-16'} />
+          <label for="ageSelector">Moins de 16 ans</label>
+        </li>
+        <li>
           <input type="radio" name="ageSelector" bind:group={form.age} value={'-18'} />
-          <label for="ageSelector">- de 18 ans</label>
+          <label for="ageSelector">Moins de 18 ans</label>
         </li>
         <li>
           <input type="radio" name="ageSelector" bind:group={form.age} value={'+18'} />
